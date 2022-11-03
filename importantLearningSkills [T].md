@@ -1,4 +1,4 @@
-## Marine ecological niche modelling and global climate change
+## Modelling the distribution of biodiversity and climate change
 ### [Important learning skill]
 
 ### S2 : Biological and Environmental Information for Macroecology
@@ -13,14 +13,11 @@
 1. Niche concept <br>
 2. BAM diagram <br>
 3. Species response functions <br>
-4. Niche conservatism
 
 ### S5 : Climate oscillations and distributional shifts of biodiversity
 
 1. Consequences of past and future climate changes to the distribution of marine biodiversity <br>
 2. Poleward expansions not offsetting projected impacts <br>
-3. Species response functions <br>
-4. Niche conservatism
 
 ### S6 : Principles of Ecological Niche Modelling
 
@@ -41,5 +38,4 @@
 1. Training data in model fitting <br>
 2. Model transferability <br>
 3. Predictive distribution map <br>
-4. Underfitting and overfitting <br>
-5. Model evaluation
+4. Model evaluation

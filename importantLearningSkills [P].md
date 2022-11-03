@@ -1,4 +1,4 @@
-## Marine ecological niche modelling and global climate change
+## Modelling the distribution of biodiversity and climate change
 ### [Important learning skill]
 
 ### S1.1 : Brief recap of R computing basics
