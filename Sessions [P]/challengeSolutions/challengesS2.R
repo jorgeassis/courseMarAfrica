@@ -8,8 +8,6 @@ library(raster)
 data1 <- "Data/vectorShapefiles/seagrass/cymodoceaNodosa.shp"
 data2 <- "Data/vectorShapefiles/globalLandmass/world.shp"
 
-?shapefile
-
 records <- shapefile(data1)
 world <- shapefile(data2)
 
@@ -36,6 +34,7 @@ regionAzores <- extent(-36, -18, 34, 42)
 
 azores <- crop(world,regionAzores)
 plot(azores)
+plot(azores, axes=TRUE)
 
 # ----------------------------------------------------
 # ----------------------------------------------------
@@ -91,4 +90,5 @@ occurrences <- read.csv(data2,sep=";")
 colnames(occurrences)
 
 depthsUsed <- extract(bathymetry,occurrences[,c("Lon","Lat")])
+depthsUsed
 hist(depthsUsed,breaks=100)

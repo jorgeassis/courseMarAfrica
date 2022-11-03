@@ -7,8 +7,6 @@ code: [github.com/jorgeassis](https://github.com/jorgeassis) <br>
 tweets: [twitter.com/jorgemfassis](https://twitter.com/jorgemfassis) <br>
 journal: [medium.com/theMarineDataScientist](https://medium.com/themarinedatascientist) <br><br>
 
-The course 'Modelling the distribution of biodiversity under climate change' was designed as an elective course within the Master programme Marine Biology at the University of Algarve.
-
 ### Scope
 The course covers the interactions and potential impacts of global climate changes (past, ongoing and future) on different levels of marine biodiversity. It is mostly hands­-on oriented, with a strong component on biodiversity and climate data acquisition, management and visualisation (e.g., the new Representative Concentration Pathway scenarios of climate change), as well as on ecological modelling using state of the art mechanistic and correlative approaches (e.g., machine learning algorithms).
 
@@ -30,15 +28,14 @@ Get to know how to discuss the results of ENM and the potential impacts of clima
 
 ### Sessions T
 S01. Course overview;<br>
-S02. Recap of Geographic Information Systems;<br>
+S02. Biological and environmental data for macroecology;<br>
 S03. Ecological niches and geographic distributions, a perspective from macroecology;<br>
-S04. Biological and environmental data for macroecology;<br>
-S05. Climate oscillations and distributional shifts of marine biodiversity;<br>
-S06. Principles of Ecological Niche Modelling;<br>
-S07. Potential applications of Ecological Niche Modelling;<br>
-S08. Model fitting and transferability in space and time;<br>
-S09. Evaluating predictive performance and setting decision thresholds;<br>
-S10. Bringing realism to Ecological Niche Modelling;<br>
+S04. Climate oscillations and distributional shifts of marine biodiversity;<br>
+S05. Principles of Ecological Niche Modelling;<br>
+S06. Potential applications of Ecological Niche Modelling;<br>
+S07. Model fitting and transferability in space and time;<br>
+S08. Evaluating predictive performance and setting decision thresholds;<br>
+S09. Bringing realism to Ecological Niche Modelling;<br>
 
 ### Sessions P
 S01.1. Brief recap of R basics;<br>
