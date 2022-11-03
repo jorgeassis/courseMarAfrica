@@ -3084,6 +3084,230 @@ if (document.readyState !== "loading" &&
 
 
 </script>
+  <script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+  <style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
 
   <style type="text/css">
 
@@ -3572,12 +3796,8 @@ S1 // Brief recap on R computing basics</div>
 <pre class = 'prettyprint lang-r'># loads the package raster
 library(sp)
 
-# removes package from current workspace
-detach(package:sp)
-
 # install a package
-install.packages(&quot;sp&quot;, dependencies = TRUE)
-devtools::install_github(&quot;ropensci/rnaturalearthhires&quot;)</pre>
+install.packages(&quot;sp&quot;, dependencies = TRUE)</pre>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-1">
 
@@ -3586,7 +3806,7 @@ devtools::install_github(&quot;ropensci/rnaturalearthhires&quot;)</pre>
 <p>The main objective of this challenge is to <strong>install</strong> a set of key R packages.</p>
 
 <div class="notebox yellowmode">
-<p>Install the R packages:<br> &ldquo;devtools&rdquo;<br> &ldquo;raster&rdquo;<br> &ldquo;sp&rdquo;<br> &ldquo;ggplot2&rdquo;<br> &ldquo;rgeos&rdquo;<br> &ldquo;rnaturalearth&rdquo;<br> &ldquo;rnaturalearthdata&rdquo;<br> &ldquo;rnaturalearthhires<br>&rdquo;rgdal”</p></div>
+<p>Install the R packages:<br> devtools<br> raster<br> sp<br> ggplot2<br> rgeos<br> rgdal</p></div>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
@@ -3609,21 +3829,6 @@ myNewObject</pre>
 ls()</pre>
 
 <pre >## [1] &quot;myNewObject&quot;</pre>
-
-<div class="footer">
-S1 // Brief recap on R computing basics</div>
-
-<!-- ------------------------------------------------------------------- -->
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-2">
-
-<p>We can remove objects from the workspace using rm().</p>
-
-<pre class = 'prettyprint lang-r'># removes one object from R environment
-rm(myNewObject)
-ls()</pre>
-
-<pre >## character(0)</pre>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
@@ -3669,7 +3874,7 @@ S1 // Brief recap on R computing basics</div>
 
 <!-- ------------------------------------------------------------------- -->
 
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-3">
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-2">
 
 <pre class = 'prettyprint lang-r'># determine the mean of a vector
 myData &lt;- c(2, 4, 3, 2, 3, 4, 2, 2)
@@ -3680,7 +3885,7 @@ mean(myData)</pre>
 <pre class = 'prettyprint lang-r'># random numbers drawn from a given distribution without replacement
 sample(1:30, size = 5)</pre>
 
-<pre >## [1] 18  2 24 17 10</pre>
+<pre >## [1] 21  6 16 22  2</pre>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
@@ -3689,59 +3894,181 @@ S1 // Brief recap on R computing basics</div>
 
 </article></slide><slide class=""><hgroup><h2>Data import and export</h2></hgroup><article  id="data-import-and-export">
 
-<p>R offers several options for accessing different data formats. Standard formats include text files, R files (single objects or entire workspaces), and databases. These data can be read in from files using a file path, but also from the Internet using an URL path or from the clipboard.</p>
-
-<pre class = 'prettyprint lang-r'># list all files in your folder
-list.files()
-
-# reading data frames from comma delimited files
-myDF &lt;- read.table(&quot;courseSchedule.txt&quot;)
-myDF &lt;- read.table(&quot;courseSchedule.txt&quot;, sep = &quot;,&quot;, header = T)
-
-# reading data frames from excel files
-library(gdata)
-read.xls(&quot;courseSchedule.xlsx&quot;, sheet = 1)</pre>
-
-<div class="footer">
-S1 // Brief recap on R computing basics</div>
-
-<!-- ------------------------------------------------------------------- -->
-
-</article></slide><slide class=""><hgroup><h2>Data import and export</h2></hgroup><article  id="data-import-and-export-1">
+<p>R offers several options for accessing different data formats. Standard formats include text files, R files (single objects or entire workspaces), and databases.</p>
 
 <pre class = 'prettyprint lang-r'># set the working directory
 setwd(&quot;my path to the course folder&quot;)</pre>
 
-<pre class = 'prettyprint lang-r'># list all files in your folder
-list.files(&quot;Data/dataBases&quot;)</pre>
+<pre class = 'prettyprint lang-r'># open records of occurrence
+myDF &lt;- read.table(&quot;Data/dataBases/Paramuricea_clavata.csv&quot;, sep = &quot;;&quot;, header = TRUE)</pre>
 
-<pre >## [1] &quot;Abra_alba.csv&quot;                       &quot;gbif.csv&quot;                           
-## [3] &quot;inaturalist.csv&quot;                     &quot;Kelp-monitoring-absent.csv&quot;         
-## [5] &quot;Kelp-monitoring-presence.csv&quot;        &quot;Kelp-monitoring.csv&quot;                
-## [7] &quot;observations-80347.csv&quot;              &quot;Paramuricea_clavata [red coral].csv&quot;
-## [9] &quot;Paramuricea_clavata.csv&quot;</pre>
+<pre class = 'prettyprint lang-r'>head(myDF)</pre>
 
-<pre class = 'prettyprint lang-r'># reading data frame from semicolon delimited files
-myDF &lt;- read.table(&quot;Data/dataBases/Paramuricea_clavata.csv&quot;, sep = &quot;;&quot;, header = T)</pre>
+<table class=" mytable" style>
 
-<pre class = 'prettyprint lang-r'># view the data.frame in RStudio
-View(myDF)</pre>
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Species
+
+</th>
+
+<th style="text-align:left;">
+
+Location
+
+</th>
+
+<th style="text-align:right;">
+
+Year
+
+</th>
+
+<th style="text-align:right;">
+
+Lon
+
+</th>
+
+<th style="text-align:right;">
+
+Lat
+
+</th>
+
+<th style="text-align:left;">
+
+Depth
+
+</th>
+
+<th style="text-align:left;">
+
+Main.reference
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Paramuricea clavata
+
+</td>
+
+<td style="text-align:left;">
+
+Strait of Messina
+
+</td>
+
+<td style="text-align:right;">
+
+1993
+
+</td>
+
+<td style="text-align:right;">
+
+15.73111
+
+</td>
+
+<td style="text-align:right;">
+
+38.25815
+
+</td>
+
+<td style="text-align:left;">
+
+45
+
+</td>
+
+<td style="text-align:left;">
+
+Rivetti; Irene et al. Global Warming and Mass Mortalities of Benthic Invertebrates in the Mediterranean Sea. PLoS ONE 9.12 (2014)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Paramuricea clavata
+
+</td>
+
+<td style="text-align:left;">
+
+Tino Island
+
+</td>
+
+<td style="text-align:right;">
+
+1999
+
+</td>
+
+<td style="text-align:right;">
+
+9.84906
+
+</td>
+
+<td style="text-align:right;">
+
+44.01409
+
+</td>
+
+<td style="text-align:left;">
+
+27
+
+</td>
+
+<td style="text-align:left;">
+
+Rivetti; Irene et al. Global Warming and Mass Mortalities of Benthic Invertebrates in the Mediterranean Sea. PLoS ONE 9.12 (2014)
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
 
 <!-- ------------------------------------------------------------------- -->
 
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-4">
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-3">
 
 <h3>Challenge 2</h3>
 
 <p>The main objective of this challenge is to <strong>import</strong> a data table in R.</p>
 
-<p><strong>Data and functions to accomplish the challenge:</strong></p>
+<p><strong>File and functions to accomplish the challenge:</strong></p>
 
 <div class="notebox yellowmode">
-<p>&ldquo;Data/dataBases/Paramuricea_clavata.csv&rdquo;<br> read.table(path)<br> View(object)</p></div>
+<p>Data/dataBases/Paramuricea_clavata.csv<br> read.table(path)<br> View(object)</p></div>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
