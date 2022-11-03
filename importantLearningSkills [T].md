@@ -1,10 +1,12 @@
 ## Marine ecological niche modelling and global climate change
 ### [Important learning skill]
 
-### S2 : Principles of Geographic Information Systems
+### S2 : Biological and Environmental Information for Macroecology
 
-1. Properties of spatial information <br>
-2. GIS data models
+1. Sources of biodiversity data <br>
+2. Inaccuracy and bias in biodiversity data <br>
+3. Types of environmental data <br>
+4. Climate change scenarios
 
 ### S3 : Ecological niches and geographic distributions
 
@@ -12,13 +14,6 @@
 2. BAM diagram <br>
 3. Species response functions <br>
 4. Niche conservatism
-
-### S4 : Biological and Environmental Information for Macroecology
-
-1. Sources of biodiversity data <br>
-2. Inaccuracy and bias in biodiversity data <br>
-3. Types of environmental data <br>
-4. Climate change scenarios
 
 ### S5 : Climate oscillations and distributional shifts of biodiversity
 
@@ -46,8 +41,5 @@
 1. Training data in model fitting <br>
 2. Model transferability <br>
 3. Predictive distribution map <br>
-4. Underfitting and overfitting
-
-### S10 : Evaluating predictive performance and setting decision thresholds
-
-1. Model evaluation <br>
+4. Underfitting and overfitting <br>
+5. Model evaluation

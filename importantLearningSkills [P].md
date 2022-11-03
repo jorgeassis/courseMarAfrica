@@ -15,7 +15,7 @@
 ### S2 : R as a Geographic Information System
 
 1. Importing and exporting vector data <br>
-2. Vector data operations [crop, area, overlap] <br>
+2. Vector data operations [crop] <br>
 3. Importing raster data <br>
 4. Raster data operations [crop]
 5. Algebra in raster data <br>
@@ -35,8 +35,5 @@
 ### S6 : Developing Ecological Niche Models
 
 1. Model fitting <br>
-2. Model transferability
-
-### S7 : Predictive performance in Ecological Modelling
-
-1. Model evaluation <br>
+2. Model transferability <br>
+3. Model evaluation <br>
