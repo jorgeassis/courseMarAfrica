@@ -5,17 +5,14 @@
 
 library(raster)
 
-data1 <- "Data/vectorShapefiles/seagrass/cymodoceaNodosa.shp"
-data2 <- "Data/vectorShapefiles/globalLandmass/world.shp"
-
-records <- shapefile(data1)
-world <- shapefile(data2)
+world <- shapefile("Data/vectorShapefiles/globalLandmass/world.shp")
+distributionRecords <- read.table("Data/dataBases/MergedCoordinates.csv", sep = ";", header = TRUE)
 
 plot(world)
-plot(records)
+plot(distributionRecords)
 
 plot(world)
-plot(records, add=TRUE,col="red")
+points(distributionRecords, col="red")
 
 # ----------------------------------------------------
 # ----------------------------------------------------
@@ -24,9 +21,7 @@ plot(records, add=TRUE,col="red")
 
 library(raster)
 
-data <- "Data/vectorShapefiles/globalLandmass/world.shp"
-
-world <- shapefile(data)
+world <- shapefile("Data/vectorShapefiles/globalLandmass/world.shp")
 
 # Crop with extent
 
@@ -39,7 +34,7 @@ plot(azores, axes=TRUE)
 # ----------------------------------------------------
 # ----------------------------------------------------
 # Challenge 2.3
-# The main objective of this challenge is to make two plots of the global maximum and minimum SST.
+# The main objective of this challenge is to make one plot of the global SST.
 
 library(raster)
 
@@ -50,45 +45,12 @@ plot(SST, main ="Sea Surface Temperatures")
 # ----------------------------------------------------
 # ----------------------------------------------------
 # Challenge 2.4
-# The main objective of this challenge is to plot the estimated warming of the ocean.
+# The main objective of this challenge is to crop a global SST layers to the extent of Western Africa.
 
 library(raster)
 
 presentSST <- raster("Data/rasterLayers/Climate/Present/OceanTemperature Surface Pred Mean.tif")
-futureSST <- raster("Data/rasterLayers/Climate/RCP85/OceanTemperature Surface Pred Mean.tif")
-
-differenceSST <- futureSST - presentSST
-plot(differenceSST, main="Global warming" )
-
-# ----------------------------------------------------
-# ----------------------------------------------------
-# Challenge 2.5
-# The main objective of this challenge is to plot the estimated warming of the ocean in West Africa.
-
-library(raster)
-
-presentSST <- raster("Data/rasterLayers/Climate/Present/OceanTemperature Surface Pred Mean.tif")
-futureSST <- raster("Data/rasterLayers/Climate/RCP85/OceanTemperature Surface Pred Mean.tif")
-
-differenceSST <- futureSST - presentSST
 
 westAfricaExtent <- extent(-30, 22, -37.5, 36)
-differenceSSTWAfrica <- crop(differenceSST,westAfricaExtent)
-plot(differenceSSTWAfrica, main="West Africa warming" )
-
-# ----------------------------------------------------
-# ----------------------------------------------------
-# Challenge 2.6
-# The main objective of this individual assignment is to **extract** the depth range used (values) by a mediterranean coral and plot it as an histogram.
-
-data1 <- "Data/rasterLayers/BathymetryDepthMean.tif"
-data2 <- "Data/dataBases/Paramuricea_clavata.csv"
-
-bathymetry <- raster(data1)
-occurrences <- read.csv(data2,sep=";")
-
-colnames(occurrences)
-
-depthsUsed <- extract(bathymetry,occurrences[,c("Lon","Lat")])
-depthsUsed
-hist(depthsUsed,breaks=100)
+presentSSTWAfrica <- crop(presentSST,westAfricaExtent)
+plot(presentSSTWAfrica, main="West Africa warming" )

@@ -3799,6 +3799,11 @@ library(sp)
 # install a package
 install.packages(&quot;sp&quot;, dependencies = TRUE)</pre>
 
+<div class="footer">
+S1 // Brief recap on R computing basics</div>
+
+<!-- ------------------------------------------------------------------- -->
+
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-1">
 
 <h3>Challenge 1</h3>
@@ -3806,7 +3811,36 @@ install.packages(&quot;sp&quot;, dependencies = TRUE)</pre>
 <p>The main objective of this challenge is to <strong>install</strong> a set of key R packages.</p>
 
 <div class="notebox yellowmode">
-<p>Install the R packages:<br> devtools<br> raster<br> sp<br> ggplot2<br> rgeos<br> rgdal</p></div>
+<p>Packages to install:<br> &quot;devtools&quot;<br> &quot;raster&quot;<br> &quot;sp&quot;<br> &quot;ggplot2&quot;<br> &quot;rgeos&quot;<br> &quot;rgdal&quot;<br><br> Function:<br> install.packages(packageName)</p></div>
+
+<div class="footer">
+S1 // Brief recap on R computing basics</div>
+
+<!-- ------------------------------------------------------------------- -->
+
+</article></slide><slide class=""><hgroup><h2>Source an external file with R functions</h2></hgroup><article  id="source-an-external-file-with-r-functions">
+
+<p>We can <strong>source</strong> a file with R functions so they will be available to use.</p>
+
+<pre class = 'prettyprint lang-r'># set the working directory Menu -&gt; Sessions -&gt; set the working directory
+setwd(&quot;the_path_to_my_working_folder&quot;)
+
+# source a set of functions
+source(&quot;sourceFunctions.R&quot;)</pre>
+
+<div class="footer">
+S1 // Brief recap on R computing basics</div>
+
+<!-- ------------------------------------------------------------------- -->
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-2">
+
+<h3>Challenge 2</h3>
+
+<p>The main objective of this challenge is to <strong>source</strong> a file in R.</p>
+
+<div class="notebox yellowmode">
+<p>Go to Menu -&gt; Sessions -&gt; Set the working directory -&gt; My directory of Sessions_[P]<br><br> File to use:<br> &quot;sourceFunctions.R&quot;<br><br> Function:<br> source(file)</p></div>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
@@ -3864,28 +3898,11 @@ print(&quot;Hello world!&quot;)</pre>
 
 <pre >## [1] &quot;Hello world!&quot;</pre>
 
-<pre class = 'prettyprint lang-r'># join character strings
-paste(&quot;Hello&quot;, &quot;world&quot;, &quot;!&quot;)</pre>
-
-<pre >## [1] &quot;Hello world !&quot;</pre>
-
-<div class="footer">
-S1 // Brief recap on R computing basics</div>
-
-<!-- ------------------------------------------------------------------- -->
-
-</article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-2">
-
 <pre class = 'prettyprint lang-r'># determine the mean of a vector
 myData &lt;- c(2, 4, 3, 2, 3, 4, 2, 2)
 mean(myData)</pre>
 
 <pre >## [1] 2.75</pre>
-
-<pre class = 'prettyprint lang-r'># random numbers drawn from a given distribution without replacement
-sample(1:30, size = 5)</pre>
-
-<pre >## [1] 21  6 16 22  2</pre>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>
@@ -3895,9 +3912,6 @@ S1 // Brief recap on R computing basics</div>
 </article></slide><slide class=""><hgroup><h2>Data import and export</h2></hgroup><article  id="data-import-and-export">
 
 <p>R offers several options for accessing different data formats. Standard formats include text files, R files (single objects or entire workspaces), and databases.</p>
-
-<pre class = 'prettyprint lang-r'># set the working directory
-setwd(&quot;my path to the course folder&quot;)</pre>
 
 <pre class = 'prettyprint lang-r'># open records of occurrence
 myDF &lt;- read.table(&quot;Data/dataBases/Paramuricea_clavata.csv&quot;, sep = &quot;;&quot;, header = TRUE)</pre>
@@ -4061,14 +4075,14 @@ S1 // Brief recap on R computing basics</div>
 
 </article></slide><slide class=""><hgroup><h2></h2></hgroup><article  id="section-3">
 
-<h3>Challenge 2</h3>
+<h3>Challenge 3</h3>
 
 <p>The main objective of this challenge is to <strong>import</strong> a data table in R.</p>
 
 <p><strong>File and functions to accomplish the challenge:</strong></p>
 
 <div class="notebox yellowmode">
-<p>Data/dataBases/Paramuricea_clavata.csv<br> read.table(path)<br> View(object)</p></div>
+<p>Go to Menu -&gt; Sessions -&gt; Set the working directory -&gt; My directory of Sessions_[P]<br><br> File to use:<br> &quot;Data/dataBases/Paramuricea_clavata.csv&quot;<br><br> Functions:<br> read.table(file)<br> View(object)</p></div>
 
 <div class="footer">
 S1 // Brief recap on R computing basics</div>

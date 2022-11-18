@@ -14,9 +14,21 @@ install.packages("rnaturalearthdata", dependencies=TRUE)
 install.packages("rnaturalearthhires", dependencies=TRUE)
 install.packages("rgdal", dependencies=TRUE)
 
+
 # ----------------------------------------------------
 # ----------------------------------------------------
 # Challenge 1.2
+# The main objective of this challenge is to **import** a data table in R.
+
+# set the working directory
+setwd("/Volumes/Jellyfish/Dropbox/Tutoring/Classes & Courses/Modelling the distribution of biodiversity and climate change/Git/courseMarAfrica/")
+
+# source a set of functions
+source("sourceFunctions.R")
+
+# ----------------------------------------------------
+# ----------------------------------------------------
+# Challenge 1.3
 # The main objective of this challenge is to **import** a data table in R.
 
 # set the working directory
